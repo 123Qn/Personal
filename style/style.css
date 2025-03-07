@@ -214,6 +214,7 @@ footer {
         width: 200px;
         height: 200px;
     }
+
 }
 
 .hero {
@@ -290,11 +291,19 @@ margin:  3% 10% 0 10% ;
     .image-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
     }
+    .content{
+        display: flex;
+     flex-direction: column;
+    }
   }
   
   @media (max-width: 480px) {
     .image-grid {
       grid-template-columns: 1fr; /* 1 image per row on very small screens */
+    }
+    .content{
+        display: flex;
+     flex-direction: column;
     }
   }
   
