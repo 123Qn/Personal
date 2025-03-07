@@ -1,0 +1,301 @@
+/*Effect setup*/
+@keyframes rgbEffect {
+    0% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); }  /* Red */
+    25% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); } /* Green */
+    50% { box-shadow: 0 0 20px rgba(0, 0, 255, 0.7); } /* Blue */
+    75% { box-shadow: 0 0 20px rgba(255, 35, 248, 0.7); } 
+    100%{ box-shadow: 0 0 20px rgba(255, 247, 0, 0.7); } 
+}
+
+/* General Styles */
+body {
+    overflow-x: hidden; /* Hides any horizontal scrollbar */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../style/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: transparent;
+    padding: 15px 0;
+    position: fixed; /* Keeps it at the top */
+    width: 100%;
+    top: 40px; /* Moves it slightly down */
+    left: 0;
+    z-index: 1000; /* Ensures it's above other elements */
+    border-radius: 10px; /* Adds rounded edges */
+    background-color: black;
+}
+
+hr{
+    width: 50%;
+    margin-top: 30px;
+}
+/* Navbar */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #ffcc00; /* Gold effect */
+    transform: scale(1.1); /* Slight zoom */
+}
+/* Main Content */
+main {
+    
+  
+   
+    padding: 20px;
+    padding-bottom: 60px; /* Prevent footer overlap */
+}
+
+section {
+    margin-bottom: 20px;
+}
+main h1{
+
+
+       
+    
+    font-size: 50px;
+}
+main h3{
+    margin-top:-30px;
+    font-size: 30px;
+    color: #008cff;
+}
+
+.overview {
+    margin-top: 50px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    gap: 50px; /* Space between text and image */
+    min-height: 80vh; /* Ensures it takes most of the screen */
+    padding: 20px;
+}
+
+/* About Section Styling */
+#about {
+    max-width: 50%;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* Image Section Styling */
+.myImg img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: rgbEffect 5s infinite; /* Apply the RGB animation */
+}
+.myImg2 img {
+    width: 350px;
+    height: 350px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+.overview h4{
+    color:#ffcc00;
+    margin-top:-90px;
+}
+.overview h3{
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    width: 100px; height: 40px; border-radius: 20px;
+    background-color:#e67e22;
+    cursor: pointer;  
+}
+button:hover{
+    background-color: #f39c12;
+}
+
+.detail{
+    margin-top: 20px;
+    display:  flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.spec{
+    display: flex;
+    flex-direction: row;
+    gap:30%;
+}
+.grid-container {
+margin-left: 25%;
+    margin-top: 100px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Adds space between the grid items */
+}
+.grid-container a{
+    text-decoration: none;
+    color: #fff;}
+    
+.grid-item {
+    width: 200px;
+    background-color: #fe0000;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+   
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 35px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px 0;
+        top:10px;
+    }
+    
+    .overview {
+        flex-direction: column; /* Stack sections vertically */
+        text-align: center; /* Center align text */
+    }
+
+    #about {
+        max-width: 90%;
+    }
+
+    .myImg img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.hero {
+    margin-top: 8%;
+    width: 100vw;
+    height: 400px;
+    background: url('../style/2202758.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Prevents unwanted scrollbars */
+}
+
+.hero h3 {
+    margin: 0; /* Removes default margin */
+    color: white; /* Adjust as needed */
+    font-size: x-large; /* Adjust size as needed */
+    position: absolute; /* Keeps it in the middle */
+}
+/* Hero Text */
+.hero-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.project-1,.project-2,.project-3{
+ display: flex;
+ flex-direction: column;
+gap: 50px;
+margin:  3% 10% 0 10% ; 
+}
+.content{
+    display: flex;
+ flex-direction: row;
+}
+.project-name{
+    width: 70%;
+}
+.info{
+    background-color: #e67e22;
+    padding: 2%;
+    border-radius: 10px;
+
+}
+/*grid img*/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 10px; /* Space between the images */
+    margin: 20px auto; /* Center the grid with some margin */
+    max-width: 1200px; /* Limit the width of the grid */
+    padding: 10px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* 1 image per row on very small screens */
+    }
+  }
+  
+  
