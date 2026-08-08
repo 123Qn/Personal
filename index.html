@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quan Huynh — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <svg class="trace" id="trace" viewBox="0 0 40 3000" preserveAspectRatio="none" aria-hidden="true">
+    <path id="tracePathBg" d="M 20 0 L 20 3000" />
+    <path id="tracePath" d="M 20 0 L 20 3000" />
+  </svg>
+
+  <header class="nav">
+    <span class="nav__mark">QH</span>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <span class="node" data-label="PWR"></span>
+      <p class="eyebrow">International university student — status: open to work</p>
+      <h1 class="hero__title">
+        Quan Huynh<br>
+        <span class="hero__title--dim">Builds things that move</span>
+      </h1>
+      <p class="hero__sub">
+        University student with an interest in technology, problem-solving,
+        and continuous learning, seeking an entry-level opportunity to
+        apply technical knowledge, develop practical skills, and gain
+        valuable professional experience.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#experience">See the work</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <span class="node" data-label="SIG"></span>
+      <p class="section__label">about</p>
+      <h2 class="section__title">Two disciplines, one habit of finishing things</h2>
+      <div class="about__grid">
+        <p>
+          I'm an IT student who ended up with a foot in two worlds. One
+          side is software — full‑stack apps, data models, the kind of
+          debugging that ends with a one‑character fix. The other is
+          hardware — sensors, motors, and the specific joy of watching
+          something you built actually move under its own power.
+        </p>
+        <p>
+          Coursework keeps me honest on fundamentals: data structures and
+          algorithms, operating systems programming, the stuff that
+          explains <em>why</em> something is slow instead of just that it
+          is. Outside class, I build my own projects end‑to‑end — design,
+          code, and eventually the part where I find out what I got wrong.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <span class="node" data-label="OUT"></span>
+      <p class="section__label">experience</p>
+      <h2 class="section__title">Programming projects &amp; work</h2>
+
+      <div class="projects">
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">web</span>
+            <span class="tag">next.js</span>
+            <span class="tag">typescript</span>
+          </div>
+          <h3 class="project__title">B2C Store <span class="project__date">July 2026</span></h3>
+          <p class="project__desc">
+            Full‑stack e‑commerce application built with Next.js, React,
+            TypeScript, and Tailwind CSS. REST APIs and backend services
+            via Next.js Route Handlers and Prisma ORM, PostgreSQL hosted
+            on AWS RDS, deployed on Vercel. Automated end‑to‑end tests
+            with Playwright and a GitHub Actions CI/CD pipeline.
+          </p>
+           <iframe
+    class="project__video"
+    src="https://www.youtube.com/embed/l_goKfa4ob4"
+    title="B2C"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+          <div>
+          <a class="project__link" href="https://github.com/123Qn/B2C-store" target="_blank" rel="noopener">Repo Link
+            →</a><br>
+          <a class="project__link" href="https://b2-c-store-web.vercel.app/" target="_blank" rel="noopener">Demo →</a>
+</div>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">c++</span>
+            <span class="tag">algorithms</span>
+          </div>
+          <h3 class="project__title">EV Charging System <span class="project__date">May 2026</span></h3>
+          <p class="project__desc">
+            C++ navigation system helping EV users find charging stations
+            and optimise travel routes. Implemented Dijkstra's
+            shortest‑path algorithm, insertion sort, adjacency lists, and
+            weighted graphs to calculate shortest and cost‑effective
+            routes between suburbs.
+          </p>
+          <a class="project__link" href="https://github.com/123Qn/EV_Charging" target="_blank" rel="noopener">Repo →</a>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">hardware</span>
+            <span class="tag">arduino</span>
+            <span class="tag">lego technic</span>
+          </div>
+          <h3 class="project__title">Arduino LEGO Technic Autonomous Car <span class="project__date">Nov 2025</span>
+          </h3>
+          <p class="project__desc">
+            Arduino‑based LEGO Technic car that detects nearby objects
+            using sensors and makes simple decisions to control movement.
+            Integrated sensors, motors, and Arduino components into a
+            working autonomous system, then tested and troubleshot it to
+            improve movement and obstacle detection.
+          </p>
+         <div class="project__video-wrap">
+  <iframe
+    class="project__video"
+    src="https://www.youtube.com/embed/Cy4pWeVPBPw"
+    title="Arduino LEGO Technic Autonomous Car demo"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">web</span>
+            <span class="tag">django</span>
+            <span class="tag">team project</span>
+          </div>
+          <h3 class="project__title">Mobility Parking Permit Register System <span class="project__date">May 2024</span>
+          </h3>
+          <p class="project__desc">
+            Collaborated with a team of four to build a web‑based mobility
+            parking permit system. Contributed to frontend and backend
+            development using Django, HTML, and CSS, and implemented user
+            registration, document uploads, and other key features.
+          </p>
+          <a class="project__link" href="https://github.com/123Qn/projectPAR15-20250302T063753Z-001"
+           target="_blank" rel="noopener">Demo →</a>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">web</span>
+            <span class="tag">html/css/js</span>
+          </div>
+          <h3 class="project__title">VietnamTravel <span class="project__date">2022</span></h3>
+          <p class="project__desc">
+            A basic website showcasing tourist attraction points across
+            63 cities in Vietnam, built with HTML, CSS, and JavaScript.
+          </p>
+          <a class="project__link" href="https://vietnamtravel.sbs" target="_blank" rel="noopener">Demo →</a>
+        </article>
+
+        <article class="project project--work">
+          <div class="project__meta">
+            <span class="tag">currently</span>
+          </div>
+          <h3 class="project__title">Barista Crew — McCafe North Parramatta</h3>
+          <p class="project__desc">
+            Prepared coffee, beverages, and food items while maintaining
+            consistent quality and presentation.
+          </p>
+        </article>
+
+        <article class="project project--work">
+          <div class="project__meta">
+            <span class="tag">2022 – 2023</span>
+          </div>
+          <h3 class="project__title">Office Assistant — VinaFood Distributor, Lansvale</h3>
+          <p class="project__desc">
+            Used MYOB to record transactions, manage invoices, and
+            maintain financial records.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <span class="node" data-label="I/O"></span>
+      <p class="section__label">skills</p>
+      <h2 class="section__title">What I reach for</h2>
+
+      <div class="stack__grid">
+        <div class="stack__group">
+          <h3>Development</h3>
+          <ul>
+            <li>Java, JavaScript, C++</li>
+            <li>Object‑Oriented Programming</li>
+            <li>Database management</li>
+            <li>Basic API integration</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3>Databases &amp; Tools</h3>
+          <ul>
+            <li>MySQL / PostgreSQL</li>
+            <li>Visual Studio Code, Android Studio</li>
+            <li>Git / GitHub / GitLab</li>
+            <li>XAMPP</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3>Networking &amp; Cloud</h3>
+          <ul>
+            <li>TCP/IP, IPv4/IPv6, subnetting, VLSM</li>
+            <li>DNS, DHCP, LAN/WAN troubleshooting</li>
+            <li>AWS fundamentals &amp; cloud infrastructure</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stack__group stack__group--full">
+        <h3>General</h3>
+        <ul class="stack__inline">
+          <li>Software &amp; hardware troubleshooting</li>
+          <li>Communication &amp; teamwork</li>
+          <li>Microsoft Office / LibreOffice</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <span class="node" data-label="EDU"></span>
+      <p class="section__label">education</p>
+      <h2 class="section__title">Western Sydney University</h2>
+
+      <div class="edu">
+        <div class="edu__item">
+          <div class="edu__row">
+            <h3>Bachelor of Information Technology</h3>
+            <span class="edu__date">3/2024 – now</span>
+          </div>
+          <p class="edu__sub">Western Sydney University</p>
+        </div>
+        <div class="edu__item">
+          <div class="edu__row">
+            <h3>Diploma of Information Technology</h3>
+            <span class="edu__date">2023 – 2024</span>
+          </div>
+          <p class="edu__sub">Western Sydney University — pathway to the Bachelor's degree</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <span class="node" data-label="GND"></span>
+      <p class="section__label">contact</p>
+      <h2 class="section__title">Building something? Let's talk.</h2>
+      <p class="contact__sub">
+        Open to entry‑level IT, software, and support roles — and always
+        happy to talk about robots that walk.
+      </p>
+      <div class="contact__links">
+        <a href="mailto:quanhuynhvt2004@gmail.com">quanhuynhvt2004@gmail.com</a>
+        <a href="https://github.com/123Qn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/quan-huynh-b0550628a" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://facebook.com/quan.huynhdonng" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Quan Huynh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
